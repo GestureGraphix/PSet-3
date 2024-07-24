@@ -113,10 +113,12 @@ Taylor polynomial to approximate $\sqrt[5]{34}$.}
 \qs{}{Use the information from Exercise 16 to estimate $\sin(38)$ correct to five decimal places}
 \sol{
     \begin{center}
-        \[ 38^{\circ} = \frac{\pi}{180} \cdot 38 = \frac{19 \pi}{90}\] 
+        \[ 38^{\circ} = \frac{\pi}{180} \cdot 38 = \frac{19 \pi}{90} = \frac{2\pi}{45} + \frac{\pi}{6}\] 
         \[ \frac{19 \pi }{90 } \text{ is in the range of } \left(0, \frac{\pi}{3}\right) \text{ so the approximation from question 3 should apply}\] 
         \[ 0.00001 \leq \frac{1\left(\frac{19\pi}{90} - \frac{\pi}{6}\right)^{n+1}}{(n + 1)!} \] 
         \[ 0.00001 \leq \frac{1\left(\frac{19\pi}{90} - \frac{\pi}{6}\right)^{4+1}}{(4 + 1)!} \approx 0.000010614 \] 
+        \[ T_{4}(x) = \frac{1}{2} + \frac{\sqrt{3}}{2} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right) - \frac{1}{4} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right)^{2} - \frac{\sqrt{3}}{12} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right)^{3} + \frac{1}{48} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right)^{4}\]  
+        \[ T_{4}(x) = \frac{1}{2} + \frac{\sqrt{3}}{2} \left(\frac{2\pi}{45}\right) - \frac{1}{4} \left(\frac{2\pi}{45}\right)^{2} - \frac{\sqrt{3}}{12} \left(\frac{2\pi}{45}\right)^{3} + \frac{1}{48} \left(\frac{2\pi}{45}\right)^{4} \approx 0.61566\]  
     \end{center}
 }
 
