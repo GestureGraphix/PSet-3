@@ -94,18 +94,16 @@ Taylor polynomial to approximate $\sqrt[5]{34}$.}
     \end{center}
     (b)
     \begin{center}
-        \[ 30 \leq x \leq 34\] 
+        \[[32,34]\] 
         \[ f^{(3)}(x) = \frac{36}{125}x^{-\frac{14}{5}}\] \
-        \[ M = \frac{36}{125}\left(30\right)^{-\frac{14}{5}}\] 
+        \[ M = \frac{36}{125}\left(1\right)^{-\frac{14}{5}}\] 
         \[ \left|f(x) = P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(30\right)^{-\frac{14}{5}}(34-32)^{2+1}}{(2+1)!} \approx 0.000028079\]
-        \[ |\sqrt[5]{34} - 2.024375| = 0.0000224584998\]
-        \[ 0.0000224584998 < 0.00002807965135\]   
+        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(1\right)^{-\frac{14}{5}}(34-32)^{2+1}}{(2+1)!} \approx 0.0000234375\]
+        \[ |\sqrt[5]{34} - 2.024375| = 0.0000224584998851\]
+        \[ 0.0000224584998851 <  0.0000234375\]   
     \end{center}
     (c) \\
-    It will be the same because the key part of the error bound formula that would change is $(x - a)^{n+1}$ but since we use the absolulte value
-    than that means that the difference, or that portion of the formula stays the same as 34 and 30 are 2 away from 32. So the value of the erorr 
-    bound is the same. 
+    It will be different because the M value is different 
 }
 
 \section{Problem: 6 Stewart 11.11.24} 
@@ -115,8 +113,8 @@ Taylor polynomial to approximate $\sqrt[5]{34}$.}
     \begin{center}
         \[ 38^{\circ} = \frac{\pi}{180} \cdot 38 = \frac{19 \pi}{90} = \frac{2\pi}{45} + \frac{\pi}{6}\] 
         \[ \frac{19 \pi }{90 } \text{ is in the range of } \left(0, \frac{\pi}{3}\right) \text{ so the approximation from question 3 should apply}\] 
-        \[ 0.00001 \leq \frac{1\left(\frac{19\pi}{90} - \frac{\pi}{6}\right)^{n+1}}{(n + 1)!} \] 
-        \[ 0.00001 \leq \frac{1\left(\frac{19\pi}{90} - \frac{\pi}{6}\right)^{4+1}}{(4 + 1)!} \approx 0.000010614 \] 
+        \[ 0.00001 \geq \frac{1\left(\frac{19\pi}{90} - \frac{\pi}{6}\right)^{n+1}}{(n + 1)!} \] 
+        \[ 0.00001 \geq \frac{1\left(\frac{19\pi}{90} - \frac{\pi}{6}\right)^{4+1}}{(4 + 1)!} \approx 4.4223745988 \cdot 10^{7} \] 
         \[ T_{4}(x) = \frac{1}{2} + \frac{\sqrt{3}}{2} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right) - \frac{1}{4} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right)^{2} - \frac{\sqrt{3}}{12} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right)^{3} + \frac{1}{48} \left(\left(\frac{2\pi}{45} + \frac{\pi}{6}\right)-\frac{\pi}{6}\right)^{4}\]  
         \[ T_{4}(x) = \frac{1}{2} + \frac{\sqrt{3}}{2} \left(\frac{2\pi}{45}\right) - \frac{1}{4} \left(\frac{2\pi}{45}\right)^{2} - \frac{\sqrt{3}}{12} \left(\frac{2\pi}{45}\right)^{3} + \frac{1}{48} \left(\frac{2\pi}{45}\right)^{4} \approx 0.61566\]  
     \end{center}
@@ -135,6 +133,11 @@ to show that $\lim_{n \to \infty}|f(x) - P_{n}(x)| = 0$. }
 		\[ \lim_{n \to \infty} |f(x) - P_{n}(x) = ? \]
 		\[ \lim_{n \to \infty } \frac{e^{x} \cdot x^{n+1}}{(n+1)!}\]  
 		\[ e^{x} \lim_{n \to \infty } \frac{x^{n+1}}{(n+1)!} = 0 \] 
+        \[ |f(x) - P_{n}(x)| \leq \frac{e^{x}(x)^{n+1}}{(n+1)!}, \text{where } |e^{0}| = M  \text{ between}  - \infty \text{ and } 0  \text{ for x} \] 
+        \[ \lim_{n \to  \infty} |f(x) - P_{n}(x) = ? \]
+		\[ \lim_{n \to  \infty } \frac{e^{0} \cdot x^{n+1}}{(n+1)!}\]  
+		\[ \lim_{n \to   \infty } \frac{x^{n+1}}{(n+1)!} = 0 \] 
+
     \end{center}
 }
 
@@ -145,12 +148,12 @@ previous problem? If not, what goes wrong? }
 \sol{
     \begin{center}
         \[ f(x) = \frac{1}{1-x} = (1-x)^{-1}\]
-        \[ f'(x) = -(1-x)^{-2}\]
+        \[ f'(x) = (1-x)^{-2}\]
         \[ f''(x) = 2(1-x)^{-3} \]
-        \[ f^{n}(x) = (-1)^{n}(n!)(1-x)^{-(n+1)}\]   
+        \[ f^{n}(x) = (n!)(1-x)^{-(n+1)}\]   
         \[ P_{n}(x) = (1-0)^{-1} - (1-0)^{-2} + \frac{2(1-0)^{-3}}{2} + \ldots + \frac{(-1)^{n}(n!)(1-0)^{-(n+1)}}{n!} (x)^{n}\] 
         \[ P_{n}(x) = (1)^{-1} - (1)^{-2}(x) + \frac{2(1)^{-3}}{2}(x)^{2} + \ldots + \frac{(-1)^{n}(n!)(1-0)^{-(n+1)}}{n!}(x)^{n}\] 
-        \[ P_{n}(x) = \sum_{k=0}^{n} (-1)^{k}(1)^{-(n+1)}(x)^{k}\] 
+        \[ P_{n}(x) = \sum_{k=0}^{n} (1)^{-(n+1)}(x)^{k}\] 
         \[ |f(x) - P_{n}(x)| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
         \[ |f(x) - P_{n}(x)| \leq \frac{M(x-a)^{n+1}}{(n+1)!}, \text{where } |e^{z}| \leq M \text{ for all } z \text{ between 0 and } x \] 
     \end{center}
