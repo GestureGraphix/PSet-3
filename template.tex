@@ -19,7 +19,7 @@ PSet 2}}
 \pagebreak
 
 \chapter{}
-\section{Problem 3: Stewart 11.11.6}
+\section{Problem 3: Stewart 11.11.16}
 \qs{}{(a) approximate $f$ by a Taylor polynomial with degree $n$ and number $a$. \\
 (b) Use Taylor's inequality to estimate the accuracy of the approximation $f(x) = T_{n}(x)$ when x lies in the given interval}
 \sol{
@@ -39,13 +39,13 @@ PSet 2}}
     \end{center}
     (b) 
     \begin{center}
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{1(0-\frac{\pi}{6})^{5}}{(5)!} \approx 0.000327953194429\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{1(\frac{\pi}{3}-\frac{\pi}{6})^{5}}{(5)!} \approx 0.000327953194429\] 
+        \[ \left|f(x) - P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
+        \[ \left|f(x) - P_{n}(x) \right| \leq \frac{1(0-\frac{\pi}{6})^{5}}{(5)!} \approx 0.000327953194429\] 
+        \[ \left|f(x) - P_{n}(x) \right| \leq \frac{1(\frac{\pi}{3}-\frac{\pi}{6})^{5}}{(5)!} \approx 0.000327953194429\] 
     \end{center}
 }
 
-\section{Problem 4: Stewart 11.20}
+\section{Problem 4: Stewart 11.11.20}
 \qs{}{(a) approximate $f$ by a Taylor polynomial with degree $n$ and number $a$. \\
 (b) Use Taylor's inequality to estimate the accuracy of the approximation $f(x) = T_{n}(x)$ when x lies in the given interval}
 
@@ -65,10 +65,10 @@ PSet 2}}
     \end{center}
     (b)
     \[ f^{(4)} = 2(x)^{-3}\] 
-    \[ \left|f(x) = P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
+    \[ \left|f(x) - P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
     \[ M = 2(0.5)^{-3} = 16\] 
-    \[ |f(x) = P_{n}(x)| \leq \frac{16(0.5-1)^{4}}{4!} \approx 0.0416666666667 \]
-    \[ |f(x) = P_{n}(x)| \leq \frac{16(1.5-1)^{4}}{4!} \approx 0.0416666666667\]
+    \[ |f(x) - P_{n}(x)| \leq \frac{16(0.5-1)^{4}}{4!} \approx 0.0416666666667 \]
+    \[ |f(x) - P_{n}(x)| \leq \frac{16(1.5-1)^{4}}{4!} \approx 0.0416666666667\]
 }
 
 \section{Problem 5}
@@ -97,8 +97,8 @@ Taylor polynomial to approximate $\sqrt[5]{34}$.}
         \[[32,34]\] 
         \[ f^{(3)}(x) = \frac{36}{125}x^{-\frac{14}{5}}\] \
         \[ M = \frac{36}{125}\left(32\right)^{-\frac{14}{5}}\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(32\right)^{-\frac{14}{5}}(34-32)^{2+1}}{(2+1)!} \approx 0.0000234375\]
+        \[ \left|f(x) - P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
+        \[ \left|f(x) - P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(32\right)^{-\frac{14}{5}}(34-32)^{2+1}}{(2+1)!} \approx 0.0000234375\]
         \[ |\sqrt[5]{34} - 2.024375| = 0.0000224584998851\]
         \[ 0.0000224584998851 <  0.0000234375\]   
     \end{center}
@@ -107,8 +107,8 @@ Taylor polynomial to approximate $\sqrt[5]{34}$.}
         \[[30,32]\] 
         \[ f^{(3)}(x) = \frac{36}{125}x^{-\frac{14}{5}}\] \
         \[ M = \frac{36}{125}\left(1\right)^{-\frac{14}{5}}\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(1\right)^{-\frac{14}{5}}|30-32|^{2+1}}{(2+1)!} \approx 0.384\]
+        \[ \left|f(x) - P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
+        \[ \left|f(x) - P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(1\right)^{-\frac{14}{5}}|30-32|^{2+1}}{(2+1)!} \approx 0.384\]
     \end{center}
     
 

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1721872268.67091 "/home/alexhernandezjuarez/Documents/math/Math 115 QR/PSet 3/template.tex" "template.pdf" "template" 1721872270.96352 0
+["pdflatex"] 1721877711.00941 "/home/alexhernandezjuarez/Documents/math/Math 115 QR/PSet 3/template.tex" "template.pdf" "template" 1721877713.2911 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1720481783.93384 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc" 1720481717.39723 3877 2ca811886181a05a861d20a35de75e06 ""
@@ -265,13 +265,13 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/math/Math 115 QR/PSet 3/template.tex" 1721872265.77447 10363 60bc675402f38a7488dfab906f22ec44 ""
+  "/home/alexhernandezjuarez/Documents/math/Math 115 QR/PSet 3/template.tex" 1721877708.11835 10367 d53fe40fc1a01cd76293d7f2a7c888f3 ""
   "letterfonts.tex" 1721309818.34757 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1721309818.34757 3389 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1721309818.35157 20053 cac64cd8837854e12008c40220fda887 ""
-  "template.aux" 1721872270.71852 3509 be5018b99f4d5a5b2ae65fec5d077418 "pdflatex"
-  "template.tex" 1721872265.77447 10363 60bc675402f38a7488dfab906f22ec44 ""
-  "template.toc" 1721872270.72252 538 70cd681179509808b5796705785acfa2 "pdflatex"
+  "template.aux" 1721877713.05039 3553 48bb689aadc081ec408b212e065baa64 "pdflatex"
+  "template.tex" 1721877708.11835 10367 d53fe40fc1a01cd76293d7f2a7c888f3 ""
+  "template.toc" 1721877713.05039 542 913e6bac24c21f72b21a2f3b2e604135 "pdflatex"
   (generated)
   "template.aux"
   "template.log"
