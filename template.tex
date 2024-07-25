@@ -96,13 +96,22 @@ Taylor polynomial to approximate $\sqrt[5]{34}$.}
     \begin{center}
         \[[32,34]\] 
         \[ f^{(3)}(x) = \frac{36}{125}x^{-\frac{14}{5}}\] \
-        \[ M = \frac{36}{125}\left(1\right)^{-\frac{14}{5}}\] 
+        \[ M = \frac{36}{125}\left(32\right)^{-\frac{14}{5}}\] 
         \[ \left|f(x) = P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
-        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(1\right)^{-\frac{14}{5}}(34-32)^{2+1}}{(2+1)!} \approx 0.0000234375\]
+        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(32\right)^{-\frac{14}{5}}(34-32)^{2+1}}{(2+1)!} \approx 0.0000234375\]
         \[ |\sqrt[5]{34} - 2.024375| = 0.0000224584998851\]
         \[ 0.0000224584998851 <  0.0000234375\]   
     \end{center}
-    (c) \\
+    (c) 
+    \begin{center}
+        \[[30,32]\] 
+        \[ f^{(3)}(x) = \frac{36}{125}x^{-\frac{14}{5}}\] \
+        \[ M = \frac{36}{125}\left(1\right)^{-\frac{14}{5}}\] 
+        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
+        \[ \left|f(x) = P_{n}(x) \right| \leq \frac{\frac{36}{125}\left(1\right)^{-\frac{14}{5}}|30-32|^{2+1}}{(2+1)!} \approx 0.384\]
+    \end{center}
+    
+
     It will be different because the M value is different 
 }
 
@@ -151,11 +160,9 @@ previous problem? If not, what goes wrong? }
         \[ f'(x) = (1-x)^{-2}\]
         \[ f''(x) = 2(1-x)^{-3} \]
         \[ f^{n}(x) = (n!)(1-x)^{-(n+1)}\]   
-        \[ P_{n}(x) = (1-0)^{-1} + (1-0)^{-2} + \frac{2(1-0)^{-3}}{2} + \ldots + \frac{(n!)(1-0)^{-(n+1)}}{n!} (x)^{n}\] 
-        \[ P_{n}(x) = (1)^{-1} + (1)^{-2}(x) + \frac{2(1)^{-3}}{2}(x)^{2} + \ldots + \frac{(n!)(1-0)^{-(n+1)}}{n!}(x)^{n}\] 
+        \[ P_{n}(x) = (1-x)^{-1} + (1-x)^{-2}(x) + \frac{2(1-x)^{-3}}{2}(x)^{2}+ \ldots + \frac{(n!)(1-x)^{-(n+1)}}{n!} (x)^{n}\] 
         \[ P_{n}(x) = \sum_{k=0}^{n} (1)^{-(n+1)}(x)^{k}\] 
         \[ |f(x) - P_{n}(x)| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
-        \[ |f(x) - P_{n}(x)| \leq \frac{M(x-a)^{n+1}}{(n+1)!} \] 
         \[ M = (n+1)!(1-x)^{-(n+2)}\] 
         \[ |f(x) - P_{n}(x)| \leq  \frac{\left((n+1)!(1-x)^{-(n+2)}\right)(x-0)^{n+1}}{(n+1)!}\] 
         \[ |f(x) - P_{n}(x)| \leq  \frac{\left((n+1)!(1-x)^{-(n+2)}\right)(x)^{n+1}}{(n+1)!}\] 
