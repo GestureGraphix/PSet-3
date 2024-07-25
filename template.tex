@@ -151,12 +151,30 @@ previous problem? If not, what goes wrong? }
         \[ f'(x) = (1-x)^{-2}\]
         \[ f''(x) = 2(1-x)^{-3} \]
         \[ f^{n}(x) = (n!)(1-x)^{-(n+1)}\]   
-        \[ P_{n}(x) = (1-0)^{-1} - (1-0)^{-2} + \frac{2(1-0)^{-3}}{2} + \ldots + \frac{(-1)^{n}(n!)(1-0)^{-(n+1)}}{n!} (x)^{n}\] 
-        \[ P_{n}(x) = (1)^{-1} - (1)^{-2}(x) + \frac{2(1)^{-3}}{2}(x)^{2} + \ldots + \frac{(-1)^{n}(n!)(1-0)^{-(n+1)}}{n!}(x)^{n}\] 
+        \[ P_{n}(x) = (1-0)^{-1} + (1-0)^{-2} + \frac{2(1-0)^{-3}}{2} + \ldots + \frac{(n!)(1-0)^{-(n+1)}}{n!} (x)^{n}\] 
+        \[ P_{n}(x) = (1)^{-1} + (1)^{-2}(x) + \frac{2(1)^{-3}}{2}(x)^{2} + \ldots + \frac{(n!)(1-0)^{-(n+1)}}{n!}(x)^{n}\] 
         \[ P_{n}(x) = \sum_{k=0}^{n} (1)^{-(n+1)}(x)^{k}\] 
         \[ |f(x) - P_{n}(x)| \leq \frac{M(x-a)^{n+1}}{(n+1)!}\] 
-        \[ |f(x) - P_{n}(x)| \leq \frac{M(x-a)^{n+1}}{(n+1)!}, \text{where } |e^{z}| \leq M \text{ for all } z \text{ between 0 and } x \] 
+        \[ |f(x) - P_{n}(x)| \leq \frac{M(x-a)^{n+1}}{(n+1)!} \] 
+        \[ M = (n+1)!(1-x)^{-(n+2)}\] 
+        \[ |f(x) - P_{n}(x)| \leq  \frac{\left((n+1)!(1-x)^{-(n+2)}\right)(x-0)^{n+1}}{(n+1)!}\] 
+        \[ |f(x) - P_{n}(x)| \leq  \frac{\left((n+1)!(1-x)^{-(n+2)}\right)(x)^{n+1}}{(n+1)!}\] 
+        \[ |f(x) - P_{n}(x)| \leq  \left((1-x)^{-(n+2)}\right)(x)^{n+1}\] 
+        \[ \lim_{n \to \infty} \left((1-x)^{-(n+2)}\right)(x)^{n+1}\] 
+        \[ \lim_{n \to \infty} \left((1-x)^{-(n+2)}\right)(x)^{n+1}\] 
+        \[ \left((1-x)^{-(n+2)}\right)(x)^{n+1} = \frac{x^{n+1}}{(1-x)^{n+2}}  = \frac{1}{1-x} \left(\frac{x}{1-x}\right)^{n+1}\]
+        \[ \lim_{n \to \infty } \left(\frac{x}{1-x}\right)^{n+1}\] 
+        \[ t = \frac{x}{1-x} < 1\]
+        \[ \frac{x}{1-x} > 1 \text{ on interval } \left[\frac{1}{2}, 1\right]\] 
+        \[ \frac{x}{1-x} > 1 \text{ on interval } \left(-1, \frac{1}{2}\right)\] 
+        \[ \lim_{n \to \infty} t^{n + 1} \]  
+        \[ \lim_{n \to \infty} t^{n + 1} = 0  \text { on interval } -1 < x < \frac{1}{2}\]  
+        \[ \lim_{n \to \infty} t^{n + 1} = \infty  \text { on interval } \frac{1}{2} \leq x \leq 1\]  
+        \[ \text{on the interval of } -1 < x < \frac{1}{2}  \lim_{n \to \infty } \left(\frac{x}{1-x}\right)^{n+1} \text{ limit approaches 0}\] 
+        \[ \text{on the interval of } \frac{1}{2}< x < 1 \lim_{n \to \infty } \left(\frac{x}{1-x}\right)^{n+1} \text{ limit approaches } \infty\] 
     \end{center}
+    On the interval of $-1 < x < \frac{1}{2}$, $\lim_{n \to \infty} \frac{1}{1-x}\left(\frac{x}{1-x}\right)^{n+1} = 0$, however this is not true 
+    on the interval of $\frac{1}{2} \leq x \leq 1$, as on this interval the limit approaches $\infty$. This means that   $P_{n}(x) = f(x)$ is only true on the interval of $-1 < x < \frac{1}{2}$.
 }
 \end{document}
 
